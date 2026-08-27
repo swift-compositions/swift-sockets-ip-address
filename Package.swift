@@ -15,8 +15,8 @@ let package = Package(
         .library(name: "Sockets IP Address", targets: ["Sockets IP Address"])
     ],
     dependencies: [
-        .package(url: "https://github.com/swift-foundations/swift-sockets.git", branch: "main"),
-        .package(url: "https://github.com/swift-foundations/swift-ip-address.git", branch: "main"),
+        .package(url: "https://github.com/swift-compositions/swift-sockets.git", branch: "main"),
+        .package(url: "https://github.com/swift-compositions/swift-ip-address.git", branch: "main"),
     ],
     targets: [
         .target(

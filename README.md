@@ -42,7 +42,7 @@ Add swift-sockets-ip-address to your Package.swift:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/swift-foundations/swift-sockets-ip-address.git", branch: "main")
+    .package(url: "https://github.com/swift-compositions/swift-sockets-ip-address.git", branch: "main")
 ]
 ```
 

@@ -1,7 +1,7 @@
 # .github/metadata.yaml
 description: "Canonical IP address bindings for swift-sockets."
 topics:
-  - foundations
+  - compositions
   - sockets
   - ip
 homepage: "https://swift-institute.org"
