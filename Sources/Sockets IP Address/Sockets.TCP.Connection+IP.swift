@@ -1,4 +1,4 @@
-public import IO
+public import IO_Kernel
 public import IP_Address
 import Kernel
 public import Sockets
@@ -8,7 +8,7 @@ extension Sockets.TCP.Connection {
     public static func connect(
         to address: IP.Address,
         port: UInt16,
-        io: IO<Sockets.Capabilities>
+        io: IO.Kernel<Sockets.Capabilities>
     ) async throws(Sockets.Error) -> sending Sockets.TCP.Connection {
         switch address {
         case .v4(let address):

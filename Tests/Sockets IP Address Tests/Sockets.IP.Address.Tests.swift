@@ -1,4 +1,4 @@
-import IO
+import IO_Kernel
 import Kernel
 import Sockets_IP_Address
 import Testing
@@ -40,8 +40,8 @@ extension `Sockets IP Address Tests`.Unit {
 extension `Sockets IP Address Tests`.Integration {
     @Test
     func `IPv4 sum connects through the typed socket adapter`() async {
-        let serverIO: IO<Sockets.Capabilities> = .blocking()
-        let clientIO: IO<Sockets.Capabilities> = .blocking()
+        let serverIO: IO.Kernel<Sockets.Capabilities> = .blocking()
+        let clientIO: IO.Kernel<Sockets.Capabilities> = .blocking()
         let listener: Sockets.TCP.Listener
         let port: UInt16
         do throws(Sockets.Error) {
@@ -79,8 +79,8 @@ extension `Sockets IP Address Tests`.Integration {
 
     @Test
     func `IPv6 sum connects through the typed socket adapter`() async {
-        let serverIO: IO<Sockets.Capabilities> = .blocking()
-        let clientIO: IO<Sockets.Capabilities> = .blocking()
+        let serverIO: IO.Kernel<Sockets.Capabilities> = .blocking()
+        let clientIO: IO.Kernel<Sockets.Capabilities> = .blocking()
         let listener: Sockets.TCP.Listener
         let port: UInt16
         do throws(Sockets.Error) {
