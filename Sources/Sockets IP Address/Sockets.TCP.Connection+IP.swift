@@ -8,7 +8,7 @@ extension Sockets.TCP.Connection {
     public static func connect(
         to address: IP.Address,
         port: UInt16,
-        io: IO.Kernel<Sockets.Capabilities>
+        io: IO<Sockets.Capabilities>
     ) async throws(Sockets.Error) -> sending Sockets.TCP.Connection {
         switch address {
         case .v4(let address):
