@@ -34,7 +34,7 @@ let package = Package(
         ),
         .testTarget(
             name: "Sockets IP Address Tests",
-            dependencies: ["Sockets IP Address"]
+            dependencies: [.target(name: "Sockets IP Address")]
         ),
     ],
     swiftLanguageModes: [.v6]
